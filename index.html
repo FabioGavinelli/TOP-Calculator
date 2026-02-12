@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <script src="logic.js"></script>
+    <script src="logic.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="calculator">
         <div id="in-out">
-            <input autofocus="true">
+            <input id="display">
         </div>
         <div id="buttons">
             <div>
@@ -35,8 +35,11 @@
             <div>
                 <button class="button clear" id="btnClear">C</button>
                 <button class="button num" id="btnZero">0</button>
-                <button class="button num" id="btnDot">.</button>
+                <button class="button dot" id="btnDot">.</button>
                 <button class="button op" id="btnPlus">+</button>
+            </div>
+            <div>
+                <button class="button eq" id="btnEqual">=</button>
             </div>
         </div>
     </div>
