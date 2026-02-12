@@ -122,6 +122,13 @@ equalBtn.addEventListener("click", (event) => {
     reset();
 })
 
+let backspaceBtn = document.querySelector("#btnBackSpace");
+backspaceBtn.addEventListener("click", (event) =>{
+    let displayArr = [...display.value];
+    displayArr.splice(displayArr.length - 1, 1);
+    display.value = displayArr.join("");
+})
+
 function reset() {
     num1 = null;
     num2 = null;
